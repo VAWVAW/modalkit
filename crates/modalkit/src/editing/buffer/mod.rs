@@ -91,7 +91,7 @@ pub struct EditBuffer<I: ApplicationInfo> {
     id: I::ContentId,
 
     /// The current contents of the buffer.
-    text: EditRope,
+    pub text: EditRope,
 
     /// Tracks cursor groups.
     cursors: AdjustStore<CursorGroupId, CursorGroup>,
