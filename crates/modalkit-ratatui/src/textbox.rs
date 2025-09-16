@@ -100,7 +100,8 @@ pub struct TextBoxState<I: ApplicationInfo = EmptyInfo> {
     group_id: CursorGroupId,
     readonly: bool,
 
-    viewctx: ViewportContext<Cursor>,
+    /// ...
+    pub viewctx: ViewportContext<Cursor>,
     term_cursor: (u16, u16),
 }
 
